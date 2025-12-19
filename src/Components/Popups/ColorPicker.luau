@@ -76,7 +76,7 @@ ColorPicker.new = function(Settings: Configuration, Window, H, S, V)
 				AnchorPoint = Vector2.new(0.5, 0),
 				Image = "http://www.roblox.com/asset/?id=181615068",
 				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-				Size = UDim2.new(1, 0, 0.4, 0),
+				Size = UDim2.new(1, 0, 0.43, -8),
 
 				[Children] = {
 					Scope:New "UICorner" {
@@ -114,7 +114,7 @@ ColorPicker.new = function(Settings: Configuration, Window, H, S, V)
 				AnchorPoint = Vector2.new(0.5, 0),
 				Image = "http://www.roblox.com/asset/?id=181615071",
 				BackgroundColor3 = Color3.fromRGB(255, 66, 66),
-				Size = UDim2.new(1, 0, 0.08, 0),
+				Size = UDim2.new(1, 0, 0.1, -8),
 
 				[Children] = {
 					Scope:New "UICorner" {
@@ -151,7 +151,7 @@ ColorPicker.new = function(Settings: Configuration, Window, H, S, V)
 				LayoutOrder = 2,
 				BackgroundTransparency = 1,
 				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-				Size = UDim2.new(1, 0, 0.24, 0),
+				Size = UDim2.new(1, 0, 0.3, -8),
 
 				[Children] = {
 					Scope:New "UIListLayout" {
@@ -449,7 +449,7 @@ ColorPicker.new = function(Settings: Configuration, Window, H, S, V)
 
 			Scope:New "Frame" {
 				Name = "Padding",
-				Size = UDim2.fromScale(1, 0.03),
+				Size = UDim2.new(1, 0, 0.04, -8),
 				LayoutOrder = 3,
 				BackgroundTransparency = 1,
 			},
@@ -460,7 +460,7 @@ ColorPicker.new = function(Settings: Configuration, Window, H, S, V)
 				AnchorPoint = Vector2.new(0, 1),
 				BackgroundTransparency = 1,
 				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-				Size = UDim2.new(1, 0, 0.14, 0),
+				Size = UDim2.new(1, 0, 0.15, -8),
 
 				[Children] = {
 					Scope:New "UIListLayout" {

@@ -239,6 +239,25 @@ local Story = {
 					Window:Destroy();
 				end,
 			})
+
+			-- Benchmark
+			local Benchmark = Window:AddTab("Benchmark")
+			
+			Benchmark:New("Button")({
+				Title = "Start",
+				Callback = function()
+					for i = 1, 50 do
+						Benchmark:New("Toggle")({
+							Title = "Button "..i,
+							Description = "This is button number "..i,
+							DefaultValue = math.random(1, 2) == 1,
+							Callback = function()
+								print("Clicked button "..i)
+							end,
+						})
+					end
+				end,
+			})
 			
 			Window:SetTab("Components")
 			Window:SetTheme("Rose")

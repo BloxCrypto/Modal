@@ -606,13 +606,13 @@ local Window = function(Settings: Configuration)
 								ImageTransparency = Animate(function(Use)
 									local ActiveButton = Use(Active.BottomLeft);
 									local Focused = Use(Active.FocusedBottomLeft); 
-									return (ActiveButton and 0) or (Focused and 0.3) or 0.6
+									return (ActiveButton and 0) or (Focused and 0.2) or 0.4
 								end, 20, 1),
 
 								Size = Animate(function(Use)
 									local ActiveButton = Use(Active.BottomLeft); 
 									local Focused = Use(Active.FocusedBottomLeft); 
-									local Offset = (ActiveButton and 15) or (Focused and 17) or 20
+									local Offset = (ActiveButton and 15) or (Focused and 16) or 18
 									return UDim2.fromOffset(Offset, Offset); 
 								end, 20, 1),
 							},
@@ -669,13 +669,13 @@ local Window = function(Settings: Configuration)
 								ImageTransparency = Animate(function(Use)
 									local ActiveButton = Use(Active.BottomRight);
 									local Focused = Use(Active.FocusedBottomRight); 
-									return (ActiveButton and 0) or (Focused and 0.3) or 0.6
+									return (ActiveButton and 0) or (Focused and 0.2) or 0.4
 								end, 20, 1),
 
 								Size = Animate(function(Use)
 									local ActiveButton = Use(Active.BottomRight); 
 									local Focused = Use(Active.FocusedBottomRight); 
-									local Offset = (ActiveButton and 15) or (Focused and 17) or 20
+									local Offset = (ActiveButton and 15) or (Focused and 16) or 18
 									return UDim2.fromOffset(Offset, Offset); 
 								end, 20, 1),
 							},

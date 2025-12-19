@@ -4,11 +4,15 @@
 local TweenService = game:GetService("TweenService");
 
 -- Init
-local Transparency = ({ AddedObjects = ({}) });
+local Transparency = ({ AddedObjects = ({}), IgnoredNames = ({ "TabButton" }) });
 
 Transparency.Add = function(Object: GuiObject)
 	local Add = function(GuiObject)
 		if (table.find(Transparency.AddedObjects, GuiObject)) then
+			return
+		end
+
+		if (table.find(Transparency.IgnoredNames, GuiObject.Name)) then
 			return
 		end
 
