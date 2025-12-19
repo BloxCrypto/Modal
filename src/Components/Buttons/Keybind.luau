@@ -31,7 +31,7 @@ local Holder = function(Settings: Configuration, Window)
 	local Key = (Settings.DefaultKeybind or "None");
 	local Text = Scope:Value(Key);
 	
-	local Toggle = Holder({
+	local Keybind = Holder({
 		Title = Settings.Title,
 		Description = Settings.Description,
 		Interactable = true,
@@ -115,7 +115,7 @@ local Holder = function(Settings: Configuration, Window)
 		}
 	}, Window);
 	
-	return Toggle
+	return Keybind
 end
 
 return Holder

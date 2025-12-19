@@ -27,7 +27,7 @@ type Configuration = {
 -- Init
 local Holder = function(Settings: Configuration, Window)
 	local Option = Scope:Value(Settings.Default or "None");
-	local Toggle = Holder({
+	local DropdownButton = Holder({
 		Title = Settings.Title,
 		Description = Settings.Description,
 		Interactable = true,
@@ -105,7 +105,7 @@ local Holder = function(Settings: Configuration, Window)
 		}
 	}, Window);
 	
-	return Toggle
+	return DropdownButton
 end
 
 return Holder

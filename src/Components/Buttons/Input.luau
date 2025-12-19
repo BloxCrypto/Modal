@@ -27,7 +27,7 @@ type Configuration = {
 local Holder = function(Settings: Configuration, Window)
 	local InputObject = Scope:Value();
 	
-	local Toggle = Holder({
+	local Input = Holder({
 		Title = Settings.Title,
 		Description = Settings.Description,
 		Interactable = true,
@@ -84,7 +84,7 @@ local Holder = function(Settings: Configuration, Window)
 		}
 	}, Window);
 	
-	return Toggle
+	return Input
 end
 
 return Holder

@@ -27,7 +27,8 @@ type Configuration = {
 local Holder = function(Settings: Configuration, Window)
 	local Focused, Held = Scope:Value(false), Scope:Value(false);
 	local ComponentPalette = (Window.Themes.Component);
-	
+	local Title, Description = Scope:Value(Settings.Title), Scope:Value(Settings.Description);
+
 	local Component = Scope:New "TextButton" {
 		Name = "Holder",
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
@@ -130,7 +131,6 @@ local Holder = function(Settings: Configuration, Window)
 							Enum.FontStyle.Normal
 						),
 						TextColor3 = Window.Themes.Text.Title.Color,
-						Text = Settings.Title,
 						BackgroundTransparency = 1,
 						Size = UDim2.new(1, -(Settings.Padding or 0), 0, 0),
 						TextSize = 13,
@@ -138,7 +138,15 @@ local Holder = function(Settings: Configuration, Window)
 						TextXAlignment = Enum.TextXAlignment.Left,
 						AutomaticSize = Enum.AutomaticSize.Y,
 						BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-						Visible = (Settings.Title and true) or false
+
+						Text = Scope:Computed(function(Use)
+							return (Use(Title) or "");
+						end),
+
+						Visible = Scope:Computed(function(Use)
+							local TitleExists = Use(Title);
+							return (TitleExists and true) or false
+						end)
 					},
 
 					Scope:New "TextLabel" {
@@ -150,7 +158,6 @@ local Holder = function(Settings: Configuration, Window)
 							Enum.FontStyle.Normal
 						),
 						TextColor3 = Window.Themes.Text.Description.Color,
-						Text = Settings.Description,
 						BackgroundTransparency = 1,
 						Size = UDim2.new(1, -(Settings.Padding or 0), 0, 0),
 						TextSize = 12,
@@ -158,7 +165,15 @@ local Holder = function(Settings: Configuration, Window)
 						TextXAlignment = Enum.TextXAlignment.Left,
 						AutomaticSize = Enum.AutomaticSize.Y,
 						BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-						Visible = (Settings.Description and true) or false
+
+						Text = Scope:Computed(function(Use)
+							return (Use(Description) or "");
+						end),
+
+						Visible = Scope:Computed(function(Use)
+							local DescriptionExists = Use(Description);
+							return (DescriptionExists and true) or false
+						end)
 					},
 				}
 			},
@@ -179,9 +194,19 @@ local Holder = function(Settings: Configuration, Window)
 			
 			Settings.Children
 		}
-	}	
+	}
+
+	local Configuration = ({ Object = Component });
+
+	Configuration.SetTitle = function(self, NewTitle: string)
+		Title:set(NewTitle);
+	end
+
+	Configuration.SetDescription = function(self, NewDescription: string)
+		Description:set(NewDescription);
+	end
 	
-	return Component
+	return Configuration
 end
 
 return Holder

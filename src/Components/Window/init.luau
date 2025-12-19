@@ -25,7 +25,7 @@ local OnEvent = (Fusion.OnEvent);
 -- Types
 type Configuration = {
 	Title: string,
-	Subtitle: string,
+	SubTitle: string,
 	Size: UDim2?,
 	Transparency: number,
 	MinimumSize: Vector2?,
@@ -53,7 +53,7 @@ local Window = function(Settings: Configuration)
 		PopupActive = Scope:Value(false),	
 		
 		Title = Scope:Value(Settings.Title),
-		Subtitle = Scope:Value(Settings.Subtitle),
+		SubTitle = Scope:Value(Settings.SubTitle),
 		Icon = Scope:Value(Settings.Icon),
 		
 		Themes = {
@@ -437,7 +437,7 @@ local Window = function(Settings: Configuration)
 									},
 									
 									Scope:New "TextLabel" {
-										Name = "Subtitle",
+										Name = "SubTitle",
 										LayoutOrder = 1,
 										FontFace = Font.new(
 											"rbxassetid://12187365364",
@@ -445,7 +445,7 @@ local Window = function(Settings: Configuration)
 											Enum.FontStyle.Normal
 										),
 										TextColor3 = Window.Themes.Text.Description.Color,
-										Text = Window.Subtitle,
+										Text = Window.SubTitle,
 										BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 										BackgroundTransparency = 1,
 										TextSize = 12,
@@ -903,7 +903,9 @@ local Window = function(Settings: Configuration)
 				local Module = Buttons:FindFirstChild(Type);
 				
 				if (Module) then
-					Scoper.Add(Components, require(Module)(..., Window));
+					local Result = require(Module)(..., Window);
+					Scoper.Add(Components, Result);
+					return Result
 				else
 					error(`Invalid component type: { Type } (Modal)`);
 				end
@@ -945,8 +947,8 @@ local Window = function(Settings: Configuration)
 		Window.Title:set(Title);
 	end
 	
-	Edit.SetSubtitle = function(self, Subtitle)
-		Window.Subtitle:set(Subtitle);
+	Edit.SetSubTitle = function(self, SubTitle)
+		Window.SubTitle:set(SubTitle);
 	end
 	
 	Edit.SetIcon = function(self, Icon)

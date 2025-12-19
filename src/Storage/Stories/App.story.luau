@@ -21,7 +21,7 @@ local Story = {
 		task.spawn(function()
 			local Window = Modal:CreateWindow({
 				Title = "Modal Library",
-				Subtitle = "github.com/lxte/Modal",
+				SubTitle = "github.com/lxte/Modal",
 				Size = UDim2.fromOffset(400, 400),
 				MinimumSize = Vector2.new(250, 200),
 				Transparency = 0,
@@ -60,7 +60,7 @@ local Story = {
 				Placeholder = "Title Name",
 				Callback = function(Value)
 					Window:SetTitle(Value);
-					-- Window:SetSubtitle("Anything") -- for setting subtitle
+					-- Window:SetSubTitle("Anything") -- for setting subtitle
 					-- Window:SetIcon("rbxassetid://0") -- for setting icon
 				end,
 			})
@@ -87,12 +87,16 @@ local Story = {
 				end,
 			})
 			
-			Components:New("Toggle")({
+			local Toggle
+			Toggle = Components:New("Toggle")({
 				Title = "Toggle",
 				Description = "Used to toggle features",
 				DefaultValue = true,
 				Callback = function(Value)
 					print("Got:", Value);
+
+					Toggle:SetTitle("Value Changed"); -- Changes the title of the component
+					Toggle:SetDescription("New value is " .. tostring(Value)); -- Changes description
 				end,
 			})
 			

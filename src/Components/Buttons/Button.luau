@@ -24,7 +24,7 @@ type Configuration = {
 
 -- Init
 local Holder = function(Settings: Configuration, Window)
-	local Toggle = Holder({
+	local Button = Holder({
 		Title = Settings.Title,
 		Description = Settings.Description,
 		Interactable = true,
@@ -33,7 +33,7 @@ local Holder = function(Settings: Configuration, Window)
 		end,
 	}, Window);
 	
-	return Toggle
+	return Button
 end
 
 return Holder

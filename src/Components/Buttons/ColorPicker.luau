@@ -26,7 +26,7 @@ type Configuration = {
 -- Init
 local Holder = function(Settings: Configuration, Window)
 	local Option = Scope:Value(Settings.Default or Color3.fromRGB(255, 255, 255));
-	local Toggle = Holder({
+	local ColorPickerButton = Holder({
 		Title = Settings.Title,
 		Description = Settings.Description,
 		Interactable = true,
@@ -70,7 +70,7 @@ local Holder = function(Settings: Configuration, Window)
 		}
 	}, Window);
 	
-	return Toggle
+	return ColorPickerButton
 end
 
 return Holder

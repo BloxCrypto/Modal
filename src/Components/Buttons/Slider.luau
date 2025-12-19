@@ -42,7 +42,7 @@ local Holder = function(Settings: Configuration, Window)
 	local Set
 	local DecimalCount = (Settings.DecimalCount or 0);
 
-	local Toggle = Holder({
+	local Slider = Holder({
 		Title = Settings.Title,
 		Description = Settings.Description,
 		Padding = 150,
@@ -231,7 +231,7 @@ local Holder = function(Settings: Configuration, Window)
 		end)
 	end))
 	
-	return Toggle
+	return Slider
 end
 
 return Holder
