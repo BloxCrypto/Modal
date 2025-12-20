@@ -4,19 +4,17 @@
 
 **A Modern UI Library for Roblox**
 
----
 <img width="1000" src="assets/ModalShowcase.png" alt="Template"/>
 </div>
 
----
-
 ## ✨ Features
-- 💡 Modern UI
+- ✨ Modern UI
 - 🎨 Theme support
-- 🧩 Support for Buttons, Inputs, Keybinds, Sliders, Toggles, Dropdowns & Multi dropdowns, Color Pickers.
+- 🏗️ Made with [Fusion](https://github.com/dphfox/Fusion)
+- 🧩 Support for Buttons, Inputs, Keybinds, Sliders, Toggles, Dropdowns, Multi Dropdowns, Color Pickers.
 
 ## 🚀 Usage
-🛠️ Check out the [the template](https://github.com/lxte/Modal/blob/main/Template.luau) to see all components and how to use them
+🛠️ Check out [the template](https://github.com/lxte/Modal/blob/main/Template.luau) to see all components and how to use them
 ```lua
 local Modal = loadstring(game:HttpGet("https://github.com/lxte/Modal/releases/latest/download/main.lua"))()
 ```
