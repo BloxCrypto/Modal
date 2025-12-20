@@ -115,7 +115,9 @@ Notification.new = function(Settings: Configuration, Window)
 								NotificationSize:set(UDim2.fromOffset(250, 0));
 
 								task.delay(0.25, function()
-									Scope:doCleanup();
+									if (not Scoper.IsPoisoned(Scope)) then
+										Scope:doCleanup();
+									end
 								end)
 							end
 						end,
@@ -257,7 +259,9 @@ Notification.new = function(Settings: Configuration, Window)
 			NotificationSize:set(UDim2.fromOffset(AbsoluteSize.X, 0));
 
 			task.delay(0.25, function()
-				Scope:doCleanup();
+				if (not Scoper.IsPoisoned(Scope)) then
+					Scope:doCleanup();
+				end
 			end)
 		end
 	end)

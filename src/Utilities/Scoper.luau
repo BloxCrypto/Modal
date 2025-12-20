@@ -8,13 +8,13 @@ local Fusion = require(Modal.Packages.Fusion);
 local Scoper = ({});
 
 Scoper.IsPoisoned = function(Scope: Fusion.Scope)
-	local Metatable = getmetatable(Scope)
+	local Metatable = getmetatable(Scope);
 
-	if typeof(Metatable) == "table" then
-		return Metatable._FUSION_POISONED
+	if (typeof(Metatable) ~= "table") then
+		return false
 	end
 
-	return false
+	return Metatable._FUSION_POISONED
 end
 
 Scoper.Insert = function(Scope: Fusion.Value, Objects: { any })

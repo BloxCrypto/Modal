@@ -43,7 +43,9 @@ local Holder = function(Settings: Configuration, Window)
 		}
 	}
 	
-	return Title
+	return {
+		Object = Title,
+	}
 end
 
 return Holder

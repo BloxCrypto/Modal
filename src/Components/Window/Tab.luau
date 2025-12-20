@@ -55,12 +55,12 @@ local Tab = function(Window)
 						local WindowTransparency = Fusion.peek(Window.Themes.WindowTransparency) or 0
 												
 						if (WindowTransparency) then
-							Transparency.Add(Component);
-							Transparency.ControlTransparency(Component, 0.15, WindowTransparency);
+							Transparency.Add(Component.Object);
+							Transparency.ControlTransparency(Component.Object, 0.15, WindowTransparency);
 						end
 					end)
 					
-					return Index, Component
+					return Index, Component.Object
 				end)
 			}
 		}
@@ -75,7 +75,7 @@ local Tab = function(Window)
 			
 			Transparency.ControlTransparency(Object, 0.15, NewTransparency) 
 			Object.Visible = true
-			
+
 			task.delay(0.15, function()
 				Object.Visible = Active
 			end)
