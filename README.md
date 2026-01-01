@@ -14,7 +14,7 @@
 - 🧩 Support for Buttons, Inputs, Keybinds, Sliders, Toggles, Dropdowns, Multi Dropdowns, Color Pickers.
 
 ## 🚀 Usage
-🛠️ Check out [the template](https://github.com/lxte/Modal/blob/main/Template.luau) to see all components and how to use them
+🛠️ Check out [the template](https://github.com/BloxCrypto/Modal/blob/main/Template.luau) to see all components and how to use them
 ```lua
 local Modal = loadstring(game:HttpGet("https://github.com/BloxCrypto/Modal/releases/download/v1.0-beta/main.lua"))()
 ```
