@@ -31,5 +31,3 @@ local Modal = loadstring(game:HttpGet("https://github.com/BloxCrypto/Modal/relea
 **⭐ star if you find this project useful**
 
 </div>
-
-# Not my repo the [Original repo](https://github.com/lxte/Modal)	
