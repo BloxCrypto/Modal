@@ -31,3 +31,5 @@ local Modal = loadstring(game:HttpGet("https://github.com/lxte/Modal/releases/la
 **⭐ star if you find this project useful**
 
 </div>
+
+# Not my repo the [Original repo](https://github.com/lxte/Modal)	
