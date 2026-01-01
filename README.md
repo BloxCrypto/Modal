@@ -5,7 +5,7 @@
 **A Modern UI Library for Roblox**
 
 <img width="1000" src="assets/ModalShowcase.png" alt="Template"/>
-[Docs](https://github.com/BloxCrypto/Modal/blob/main/Docs.md)
+Check [Docs](https://github.com/BloxCrypto/Modal/blob/main/Docs.md) for more!
 
 ## ✨ Features
 - ✨ Modern UI
