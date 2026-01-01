@@ -2,8 +2,8 @@
 
 A modern, customizable Roblox UI library with theming, notifications, and a full set of reusable components.
 
-**Repository:** https://github.com/lxte/Modal  
-**Author:** lxte
+**Repository:** https://github.com/BloxCrypto/Modal/  
+**Author:** Leviform
 
 ---
 
