@@ -1,5 +1,3 @@
--- github.com/lxte/Modal
-
 -- Services
 local UserInputService = game:GetService("UserInputService");
 
@@ -7,7 +5,7 @@ local UserInputService = game:GetService("UserInputService");
 local Modal = loadstring(game:HttpGet("https://github.com/lxte/Modal/releases/latest/download/main.lua"))()
 local Window = Modal:CreateWindow({
     Title = "Modal",
-    SubTitle = "github.com/lxte/Modal",
+    SubTitle = "Hi",
     Size = UDim2.fromOffset(400, 400),
     MinimumSize = Vector2.new(250, 200),
     Transparency = 0,
