@@ -47,7 +47,7 @@ local Modal = loadstring(game:HttpGet("https://github.com/lxte/Modal/releases/la
 ```lua
 local Window = Modal:CreateWindow({
     Title = "Modal",
-    SubTitle = "github.com/lxte/Modal",
+    SubTitle = "https://github.com/BloxCrypto/Modal",
     Size = UDim2.fromOffset(400, 400),
     MinimumSize = Vector2.new(250, 200),
     Transparency = 0,
