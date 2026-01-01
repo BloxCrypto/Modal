@@ -39,7 +39,7 @@ A modern, customizable Roblox UI library with theming, notifications, and a full
 Load Modal directly from the latest GitHub release:
 
 ```lua
-local Modal = loadstring(game:HttpGet("https://github.com/lxte/Modal/releases/latest/download/main.lua"))()
+local Modal = loadstring(game:HttpGet("https://github.com/BloxCrypto/Modal/releases/download/v1.0-beta/main.lua"))()
 ```
 
 ## Creating a Window
