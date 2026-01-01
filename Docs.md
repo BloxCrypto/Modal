@@ -131,6 +131,12 @@ Toggle = Tab:New("Toggle")({
     end,
 })
 ```
+## Set Toggles
+
+```lua
+Toggle:SetTitle("Value Changed");
+Toggle:SetDescription("New value is"));
+```
 
 ## Keybind
 
