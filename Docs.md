@@ -138,6 +138,22 @@ Toggle:SetTitle("Value Changed");
 Toggle:SetDescription("New value is"));
 ```
 
+## Slider
+
+```lua
+Tab:New("Slider")({
+    Title = "Slider",
+    Description = "Adjust value",
+    Default = 0,
+    Minimum = 0,
+    Maximum = 1,
+    DecimalCount = 2,
+    Callback = function(Value)
+        print(Value)
+    end,
+})
+```
+
 ## Keybind
 
 ```lua
