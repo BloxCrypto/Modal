@@ -120,8 +120,7 @@ Tab:New("Input")({
 ## Toggle
 
 ```lua
-local Toggle
-Toggle = Tab:New("Toggle")({
+Tab:New("Toggle")({
     Title = "Toggle",
     Description = "Enable feature",
     DefaultValue = true,
