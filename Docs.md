@@ -221,7 +221,7 @@ Window:Notify({
 })
 ```
 
-Themes
+## Themes
 
 * Built-in Themes
 
@@ -233,7 +233,7 @@ Window:SetTheme("Rose")
 Window:SetTheme("Emerald")
 ```
 
-## Custom Theme
+## Custom Themes
 
 ```lua
 Window:SetTheme({
