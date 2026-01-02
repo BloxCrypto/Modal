@@ -30,7 +30,6 @@ A modern, customizable Roblox UI library with theming, notifications, and a full
 - [Utility Functions](#utility-functions)
 - [Window Methods](#window-methods)
 - [Example](#example)
-- [License](#license)
 
 ---
 
@@ -258,6 +257,15 @@ Window:SetTheme({
 > Sections with `Rotation` support `ColorSequence`
 > Others only support `Color3`
 
+## Utility Functions
+n
+Input Matching
+```lua
+Modal:IsCorrectInput(Input, Keybind)
+```
+
+> Used to compare `UserInputService` inputs with keybind values.
+
 ## Window Methods
 
 ```lua
@@ -275,3 +283,7 @@ if Modal:IsCorrectInput(Input, Keybind) then
     print("Triggered")
 end
 ```
+
+## Example
+
+Visit [Template.luau](https://github.com/BloxCrypto/Modal/blob/main/Template.luau)
