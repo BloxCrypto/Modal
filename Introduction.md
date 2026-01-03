@@ -5,7 +5,6 @@
 **A Modern UI Library for Roblox**
 
 <img width="1000" src="assets/ModalShowcase.png" alt="Template"/>
-Check [Docs](https://github.com/BloxCrypto/Modal/blob/main/Docs.md) for more!
 
 ## ✨ Features
 - ✨ Modern UI
@@ -29,5 +28,6 @@ local Modal = loadstring(game:HttpGet("https://github.com/BloxCrypto/Modal/relea
 <div align="center">
 
 **⭐ star if you find this project useful**
+
 
 </div> 
