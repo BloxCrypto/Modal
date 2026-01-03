@@ -4,7 +4,7 @@
 
 **A Modern UI Library for Roblox**
 
-![Template](.gitbook/assets/ModalShowcase.png)
+![Template](https://github.com/BloxCrypto/Modal/blob/main/.gitbook/assets/ModalShowcase.png)
 
 ### ✨ Features
 
